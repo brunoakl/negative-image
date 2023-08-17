@@ -16,7 +16,14 @@ Testado com
 - $ pip install scikit-image
 - $ sudo apt-get install libopencv-*
 - $ pip install opencv-contrib-python
-- $ conda update -n base -c defaults conda 
+- $ conda update -n base -c defaults conda
+
+###Explicação
+Ambos os scripts funcionam adequadamente, porém o v1.py contém um parâmetro estático para receber a imagem, lendo qualquer imagem nomeada como "exemplo.jpg".
+
+Já o v2.py não tem esse problema, pois fizemos uso da biblioteca argparse.ArgumentParser que nos permitiu criar um parâmetro flexível, 
+permitindo o código ler imagem com outros nomes a partir do parâmetro -i. No fim das contas, v2.py é o código com funcionamento mais completo.
+
 
 ### Executando
 - $ conda activate vc
